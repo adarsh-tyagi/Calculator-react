@@ -3,6 +3,7 @@ import "./App.css";
 import Buttons from "./Buttons";
 import Output from "./Output";
 import Formula from "./Formula";
+import logo from "./logo.svg";
 
 const isOperator = /[/*+-]/;
 const endsWithOperator = /[x+-/]$/;
@@ -178,7 +179,10 @@ class App extends React.Component {
             operators={this.handleOperators}
           />
         </div>
-        <p>Made with 💖 by Adarsh Tyagi</p>
+        <p>
+          Made with
+          <img src={logo} alt="" /> by Adarsh Tyagi
+        </p>
       </div>
     );
   }

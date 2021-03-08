@@ -47,6 +47,24 @@ p {
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-bottom: 3px solid black;
-  border-radius: 20px;
+  border-radius: 25px;
   border-top: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+img::after {
+  content: " ";
+}
+img::before {
+  content: " ";
 }
